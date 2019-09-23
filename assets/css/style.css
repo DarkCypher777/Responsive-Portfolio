@@ -57,7 +57,7 @@ li {
 
 .container {
     width: 960px;
-    height: 480px;
+
     overflow: auto;
     color: #777777;
     background-color: #ffffff;
@@ -66,10 +66,11 @@ li {
     margin: auto;
     clear: both;
     display: block;
+    max-width: 100%;
 }
 
 body {
-    background-image: url(assets/images/wallpaper1.png);
+    background-image: url("images/wallpaper1.png");
     background-position: left top;
 }
 
@@ -95,6 +96,7 @@ p {
     line-height: 1.6;
     padding-left: 225px;
     padding-right: 10px;
+    padding: 10px;
 }
 
 footer {
@@ -114,7 +116,10 @@ footer {
 
 /** Potfolio Page **/
 
-
+.row {
+    display: flex;
+    justify-content: center;
+}
 
 .text1 {
     bottom: 20px;
@@ -127,6 +132,11 @@ footer {
 
 
 /** Contact **/
+
+
+form {
+    padding: 20px;
+}
 
 input[type=text], select, textarea {
     width: 100%;
@@ -156,15 +166,59 @@ input[type=submit]:hover {
 }
 
 /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 980px) and (min-width: 768px) and (min-width: 640px) {
+@media screen and (max-width: 980px) {
     body {
-    display: block;
+        display: block;
+        width: 100%;
     }
 
     header {
+        margin: auto;
         padding-right: 0;
     }
 
-    img {
+    .row { 
+
 
     }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+        display: block;
+    }
+    
+    header {
+        margin: auto;
+
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        width: 100%;
+        display: block;
+    }
+
+    header {
+        margin: auto;
+
+    }
+
+    img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+}
