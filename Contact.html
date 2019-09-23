@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="wallpaper" href="assets/images/wallpaper1.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="navbar">
+        <header id="myname">Ben Diamond</header>    
+            <ul>
+                <li><a href="index.html">About</a></li>
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+
+    <!--change wallpaper to lighter style-->
+    <style>
+        body {
+            background-image: url(assets/images/wallpaper1.png);
+            background-position: left top;
+            }
+    </style>
+    
+        <div class="container">
+            <h2>Contact</h2>
+    
+            <hr>
+
+            <div class="contact-box">
+                <form action="/action_page.php">
+                <div class="row">
+                  <div class="col-25">
+                    <label for="fname">Name</label>
+                  </div>
+                  <div class="col-75">
+                    <input type="text" id="fname" name="fullname" placeholder="Your name..">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-25">
+                    <label for="email">Email</label>
+                  </div>
+                    <div class="col-75">
+                    <input type="text" id="email" name="email" placeholder="Email">
+                    </div>
+                </div>
+
+            </div>
+                <div class="row">
+                    <div class="col-25">
+                    <label for="message">Message</label>
+                    </div>
+
+                    <div class="col-75">
+                    <textarea id="message" name="message" placeholder="Type your message" style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                <input type="submit" value="Submit">
+                </div>
+            </form>
+
+        </div>
+
+    <footer>Copyright@</footer>
+
+</body>
+
+</html>

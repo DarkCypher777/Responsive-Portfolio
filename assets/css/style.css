@@ -1,0 +1,170 @@
+/**Main CSS **/
+
+* {
+    box-sizing: border-box;
+  }
+
+header {
+    font-family: 'Georgia', Times, Times New Roman, serif;
+    background-color: #4aaaa5;
+    color: #eee;
+    text-align: center;
+    position: static;
+    top: 50%;
+    height: 50px;
+    width: 125px;
+    margin: auto;
+    padding: 10px;
+    margin-left: 300px;
+    margin-right: auto;
+}
+
+/** Nav bar **/
+.navbar {
+    display: flex;
+    color: darkorange;
+    padding-right: 10%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+        
+li {
+    display: inline;
+}
+
+
+.navbar ul li {
+    display:inline-block;
+  }
+
+#about {
+    color: #eee;
+}
+
+#portfolio {
+    color: #eee;
+}
+
+#contact {
+    color: #eee;
+}
+
+/**Main Body**/
+
+.container {
+    width: 960px;
+    height: 480px;
+    overflow: auto;
+    color: #777777;
+    background-color: #ffffff;
+    border-color: #ddd;
+    border-style: solid;
+    margin: auto;
+    clear: both;
+    display: block;
+}
+
+body {
+    background-image: url(assets/images/wallpaper1.png);
+    background-position: left top;
+}
+
+img {
+    padding: 10px;
+    display: flex;
+}
+
+#mypicture {
+    float: left;
+    height: 250px;
+    width: 250px;
+}
+
+h2 {
+    color: #4aaaa5;
+    padding-left: 10px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
+    line-height: 1.6;
+    padding-left: 225px;
+    padding-right: 10px;
+}
+
+footer {
+    background-color: #666666;
+    color: #eee;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-size: 8px;
+    width: 100%;
+    border-top: 8px solid #4aaaa5;
+    border-left: 0;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+
+/** Potfolio Page **/
+
+
+
+.text1 {
+    bottom: 20px;
+    right: 20px;
+    background-color: black;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+
+/** Contact **/
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+  
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+  
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+  
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 980px) and (min-width: 768px) and (min-width: 640px) {
+    body {
+    display: block;
+    }
+
+    header {
+        padding-right: 0;
+    }
+
+    img {
+
+    }
